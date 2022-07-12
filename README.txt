@@ -1,1 +1,0 @@
-Everything to know about sedem.
