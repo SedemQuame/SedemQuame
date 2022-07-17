@@ -3326,3 +3326,12 @@ body.is-touch .poptrox-popup .closer {
 .project-image {
   height: 239.792px;
 }
+
+.tech-names {
+  text-align: center;
+}
+
+.tech-image{
+  border-radius: 50%;
+  height: 150px;
+}
