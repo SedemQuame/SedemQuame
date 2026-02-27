@@ -123,8 +123,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (max-width: 768px) {
-  .site-nav,
-  .nav-toggle {
+  .site-nav {
     display: none !important;
   }
 
@@ -149,7 +148,8 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  min-height: 80px;
+  min-height: 68px;
+  padding: 10px 0;
 }
 
 .brand {
@@ -191,12 +191,13 @@ body::-webkit-scrollbar-thumb {
 
 .site-nav {
   display: flex;
-  gap: 20px;
+  gap: 16px;
   font-weight: 500;
+  font-size: clamp(0.9rem, 0.85rem + 0.15vw, 1rem);
 }
 
 .site-nav a {
-  padding: 10px 0;
+  padding: 6px 0;
 }
 
 .header-cta {
@@ -573,32 +574,6 @@ body::-webkit-scrollbar-thumb {
   box-shadow: var(--shadow-3);
 }
 
-.nav-toggle {
-  display: none;
-  background: transparent;
-  border: none;
-}
-
-.nav-toggle-bar {
-  width: 24px;
-  height: 2px;
-  background: var(--text);
-  display: block;
-  margin: 5px 0;
-}
-
-.site-header.nav-open .site-nav {
-  clip-path: inset(0 0 0 0 round 0);
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.site-header.nav-open .header-cta {
-  clip-path: inset(0 0 0 0 round 0);
-  opacity: 1;
-  pointer-events: auto;
-}
-
 .project-page {
   background: var(--bg);
 }
@@ -677,34 +652,6 @@ body::-webkit-scrollbar-thumb {
 @media (max-width: 960px) {
   .site-header .header-inner {
     flex-wrap: wrap;
-  }
-
-  .nav-toggle {
-    display: inline-flex;
-    flex-direction: column;
-  }
-
-  .site-nav {
-    width: 100%;
-    flex-direction: column;
-    gap: 0;
-    border-radius: var(--radius);
-    border: 1px solid var(--border);
-    padding: 16px;
-    background: var(--surface);
-    clip-path: inset(0 0 100% 0);
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
-  }
-
-  .header-cta {
-    width: 100%;
-    justify-content: flex-start;
-    clip-path: inset(0 0 100% 0);
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
   }
 
   .panel-hero {

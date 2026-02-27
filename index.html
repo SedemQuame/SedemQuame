@@ -32,13 +32,6 @@
           </div>
         </a>
 
-        <button class="nav-toggle" aria-expanded="false" aria-controls="siteNav">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="nav-toggle-bar"></span>
-          <span class="nav-toggle-bar"></span>
-          <span class="nav-toggle-bar"></span>
-        </button>
-
         <nav id="siteNav" class="site-nav" aria-label="Primary">
           <a href="#about">About</a>
           <a href="#experience">Experience</a>
@@ -557,14 +550,6 @@
     </footer>
 
     <script>
-      const navToggle = document.querySelector('.nav-toggle');
-      const nav = document.getElementById('siteNav');
-      const header = document.querySelector('.site-header');
-      navToggle.addEventListener('click', () => {
-        const expanded = navToggle.getAttribute('aria-expanded') === 'true';
-        navToggle.setAttribute('aria-expanded', (!expanded).toString());
-        header.classList.toggle('nav-open');
-      });
       document.getElementById('year').textContent = new Date().getFullYear();
     </script>
   </body>
