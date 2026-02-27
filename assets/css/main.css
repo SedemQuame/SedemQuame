@@ -24,7 +24,7 @@ body {
   background: linear-gradient(180deg, #eef2ff 0%, #f5f6fb 45%, #fdfdfd 100%);
   color: var(--text);
   line-height: 1.6;
-  font-size: clamp(1rem, 0.9rem + 0.4vw, 1.2rem);
+  font-size: clamp(1rem, 1rem + 0.6vw, 1.35rem);
 }
 
 a {
@@ -52,24 +52,24 @@ h5 {
 }
 
 h1 {
-  font-size: clamp(2.1rem, 1.4rem + 2vw, 3.2rem);
+  font-size: clamp(2.4rem, 1.6rem + 2.4vw, 3.8rem);
 }
 
 h2 {
-  font-size: clamp(1.8rem, 1.1rem + 1.4vw, 2.6rem);
+  font-size: clamp(2rem, 1.2rem + 1.6vw, 3rem);
 }
 
 h3 {
-  font-size: clamp(1.4rem, 1rem + 0.8vw, 1.9rem);
+  font-size: clamp(1.5rem, 1.1rem + 1vw, 2.1rem);
 }
 
 p {
   margin: 0 0 1em;
-  font-size: clamp(1rem, 0.85rem + 0.35vw, 1.2rem);
+  font-size: clamp(1rem, 0.95rem + 0.45vw, 1.25rem);
 }
 
 li {
-  font-size: clamp(1rem, 0.85rem + 0.35vw, 1.2rem);
+  font-size: clamp(1rem, 0.95rem + 0.35vw, 1.2rem);
 }
 
 ul,
@@ -108,9 +108,31 @@ body::-webkit-scrollbar-thumb {
 }
 
 .contain {
-  width: clamp(80vw, 84vw, 90vw);
+  width: 100%;
+  max-width: 90vw;
+  min-width: 80vw;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 clamp(16px, 3vw, 40px);
+}
+
+@media (max-width: 768px) {
+  .contain {
+    max-width: 90vw;
+    min-width: 85vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-nav,
+  .nav-toggle {
+    display: none !important;
+  }
+
+  .header-cta {
+    clip-path: none;
+    opacity: 1;
+    pointer-events: auto;
+  }
 }
 
 .site-header {
@@ -230,8 +252,14 @@ body::-webkit-scrollbar-thumb {
 }
 
 .panel-surface {
-  background: var(--surface);
-  box-shadow: inset 0 -1px 0 var(--border);
+  background: transparent;
+}
+
+.panel-surface > .contain {
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: calc(var(--radius) + 18px);
+  padding: clamp(32px, 4vw, 64px);
+  box-shadow: var(--shadow-2);
 }
 
 .panel-cta {
@@ -254,7 +282,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .lede {
-  font-size: 1.1rem;
+  font-size: clamp(1.1rem, 1rem + 0.5vw, 1.35rem);
   color: var(--muted);
 }
 
@@ -274,7 +302,7 @@ body::-webkit-scrollbar-thumb {
 
 .metric {
   display: block;
-  font-size: 1.4rem;
+  font-size: clamp(1.4rem, 1.2rem + 0.4vw, 1.8rem);
   font-weight: 600;
 }
 
@@ -299,7 +327,13 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  max-width: min(520px, 100%);
+  max-width: clamp(360px, 45vw, 640px);
+}
+
+@media (min-width: 1400px) {
+  .hero-portrait {
+    padding: clamp(28px, 2vw, 48px);
+  }
 }
 
 .hero-portrait picture {
@@ -319,8 +353,24 @@ body::-webkit-scrollbar-thumb {
   gap: 4px;
 }
 
+@media (max-width: 768px) {
+  #hero {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-visual {
+    order: -1;
+    width: 100%;
+  }
+
+  .hero-portrait {
+    max-width: 100%;
+  }
+}
+
 .tiny-label {
-  font-size: 0.8rem;
+  font-size: clamp(0.75rem, 0.7rem + 0.2vw, 0.95rem);
   color: var(--muted);
   text-transform: uppercase;
   letter-spacing: 0.08em;
