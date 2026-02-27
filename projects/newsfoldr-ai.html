@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NewsFoldr Intelligence · Sedem Quame Amekpewu</title>
+    <meta
+      name="description"
+      content="Case study for the AI-powered NewsFoldr platform engineered by Sedem Quame Amekpewu."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="icon" href="../images/avatar.png" type="image/png" />
+  </head>
+  <body class="project-page">
+    <header class="project-header">
+      <div class="contain">
+        <a class="back-link" href="../index.html">← Back to portfolio</a>
+        <p class="eyebrow">Media Intelligence · 2024</p>
+        <h1>NewsFoldr Intelligence</h1>
+        <p class="lede">
+          End-to-end AI-powered news aggregation platform that ingests over 10,000 articles daily, normalizes data from
+          dozens of Ghanaian sources, and personalizes delivery with LLM-powered summaries.
+        </p>
+        <div class="project-meta">
+          <article>
+            <p class="tiny-label">Role</p>
+            <p>Founder & Lead Engineer</p>
+          </article>
+          <article>
+            <p class="tiny-label">Timeline</p>
+            <p>Nov 2021 – Feb 2024</p>
+          </article>
+          <article>
+            <p class="tiny-label">Stack</p>
+            <p>Python, AWS Lambda, MongoDB, FastAPI, React</p>
+          </article>
+          <article>
+            <p class="tiny-label">Impact</p>
+            <p>35% lower latency · 10k+ articles/day · Fault tolerant scrapers</p>
+          </article>
+        </div>
+        <div class="project-links">
+          <a
+            class="btn btn-primary"
+            href="https://medium.com/@sedemquame/how-i-built-a-data-pipeline-to-power-newsfoldr-6b9cdd1c5e8a"
+            target="_blank"
+            rel="noopener"
+            >Read the pipeline breakdown</a
+          >
+          <a class="btn btn-ghost" href="mailto:sedem.amekpewu.3@gmail.com?subject=NewsFoldr%20Demo%20Request">Request a demo</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="project-section contain">
+        <h2>Problem</h2>
+        <p>
+          Ghanaian readers juggle fragmented news experiences, unreliable apps, and repetitive content. NewsFoldr needed
+          resilient ingestion plus intelligent ranking so audiences could trust one platform for radio, print, and blog
+          updates.
+        </p>
+      </section>
+
+      <section class="project-section contain project-grid">
+        <div class="card" data-elevation="1">
+          <h3>Data ingestion</h3>
+          <ul>
+            <li>Built highly specialized scrapers with IP rotation, CAPTCHA solving, and authentication handling.</li>
+            <li>Used event-driven queues so failures auto-retried without blocking the pipeline.</li>
+            <li>Normalized metadata for downstream AI summarization and topic clustering.</li>
+          </ul>
+        </div>
+        <div class="card" data-elevation="1">
+          <h3>AI layer</h3>
+          <ul>
+            <li>Added LLM summaries and categorization using microservices deployed on AWS Lambda.</li>
+            <li>Orchestrated caching to cut latency by 35% while preserving freshness.</li>
+            <li>Built responsive web + mobile surfaces to showcase curated feeds.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="project-section contain">
+        <h2>Outcomes</h2>
+        <div class="project-grid">
+          <div class="stat-card" data-elevation="1">
+            <span class="metric">10k+</span>
+            <p class="tiny-label">Articles ingested daily</p>
+          </div>
+          <div class="stat-card" data-elevation="1">
+            <span class="metric">35%</span>
+            <p class="tiny-label">Latency improvement via caching + queues</p>
+          </div>
+          <div class="stat-card" data-elevation="1">
+            <span class="metric">0</span>
+            <p class="tiny-label">Downtime during scraper rotations</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-section contain">
+        <h2>Responsibilities</h2>
+        <div class="project-grid">
+          <div class="card" data-elevation="1">
+            <p class="tiny-label">Architecture</p>
+            <p>Designed microservices and ETL topology spanning ingestion, enrichment, ranking, and delivery.</p>
+          </div>
+          <div class="card" data-elevation="1">
+            <p class="tiny-label">Product</p>
+            <p>Handled UX for responsive web/mobile interfaces with Material-inspired cards and typography.</p>
+          </div>
+          <div class="card" data-elevation="1">
+            <p class="tiny-label">Operations</p>
+            <p>Instrumented alerts, dashboards, and runbooks to keep a solo-operated platform production-ready.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="contain">
+        <p>© <span id="year"></span> Sedem Quame Amekpewu · NewsFoldr Intelligence</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

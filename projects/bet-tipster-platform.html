@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bet Tipster Platform · Sedem Quame Amekpewu</title>
+    <meta
+      name="description"
+      content="Case study for the Bet Tipster trading signals platform led by Sedem Quame Amekpewu."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="icon" href="../images/avatar.png" type="image/png" />
+  </head>
+  <body class="project-page">
+    <header class="project-header">
+      <div class="contain">
+        <a class="back-link" href="../index.html">← Back to portfolio</a>
+        <p class="eyebrow">Trading · 2023</p>
+        <h1>Bet Tipster Platform</h1>
+        <p class="lede">
+          Architected and shipped a subscription-based trading signals product featuring JWT auth, escrow safeguards, and
+          resilient microservices spanning data ingest, pricing, and payouts.
+        </p>
+        <div class="project-meta">
+          <article>
+            <p class="tiny-label">Role</p>
+            <p>Founder & Lead Engineer</p>
+          </article>
+          <article>
+            <p class="tiny-label">Timeline</p>
+            <p>Sep 2023 – May 2024</p>
+          </article>
+          <article>
+            <p class="tiny-label">Stack</p>
+            <p>Python, React, AWS, Heroku, PostgreSQL</p>
+          </article>
+          <article>
+            <p class="tiny-label">Impact</p>
+            <p>98% uptime · Full test automation · Secure escrow flows</p>
+          </article>
+        </div>
+        <div class="project-links">
+          <a class="btn btn-primary" href="mailto:sedem.amekpewu.3@gmail.com?subject=Bet%20Tipster%20Platform%20Demo">
+            Schedule a private demo
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="project-section contain">
+        <h2>Goals</h2>
+        <p>
+          Deliver a trustworthy subscription experience for retail traders with transparent performance metrics, auditable
+          payout flows, and proactive reliability across web and mobile interfaces.
+        </p>
+      </section>
+
+      <section class="project-section contain project-grid">
+        <div class="card" data-elevation="1">
+          <h3>Architecture</h3>
+          <ul>
+            <li>Designed a microservices topology with event-driven messaging and auto-scaling workers.</li>
+            <li>Implemented JWT-based authentication and granular role-based access control.</li>
+            <li>Added encryption in transit and at rest, plus automated backup/restore procedures.</li>
+          </ul>
+        </div>
+        <div class="card" data-elevation="1">
+          <h3>User experience</h3>
+          <ul>
+            <li>Built responsive web and mobile clients with clear insight into signal history and risk.</li>
+            <li>Integrated escrow workflows to protect funds until both parties confirmed fulfillment.</li>
+            <li>Wired notifications (email, push, SMS) with circuit breakers to avoid noise.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="project-section contain">
+        <h2>Reliability focus</h2>
+        <div class="callout">
+          <p>
+            Achieved 98% uptime by combining fault-tolerant services, automated health checks, and load/performance tests
+            that mimicked peak trading days before every release.
+          </p>
+        </div>
+      </section>
+
+      <section class="project-section contain">
+        <h2>Key learnings</h2>
+        <div class="project-grid">
+          <div class="card" data-elevation="1">
+            <p class="tiny-label">Testing</p>
+            <p>Invested in unit, integration, and load tests to catch regressions before bettors felt them.</p>
+          </div>
+          <div class="card" data-elevation="1">
+            <p class="tiny-label">Security</p>
+            <p>Designed escrow and payout modules with strict audit trails and incident response playbooks.</p>
+          </div>
+          <div class="card" data-elevation="1">
+            <p class="tiny-label">Product ops</p>
+            <p>Balanced roadmap delivery with a customer advisory loop to prioritize the most actionable signals.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="contain">
+        <p>© <span id="year"></span> Sedem Quame Amekpewu · Bet Tipster Platform</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

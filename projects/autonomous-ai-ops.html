@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Autonomous AI Delivery Platform · Sedem Quame Amekpewu</title>
+    <meta
+      name="description"
+      content="Case study: RLHF, RAG, and MCP-powered AI delivery platform built by Sedem Quame Amekpewu at Turing."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="icon" href="../images/avatar.png" type="image/png" />
+  </head>
+  <body class="project-page">
+    <header class="project-header">
+      <div class="contain">
+        <a class="back-link" href="../index.html">← Back to portfolio</a>
+        <p class="eyebrow">AI Platforms · 2025</p>
+        <h1>Autonomous AI Delivery Platform</h1>
+        <p class="lede">
+          Fine-tuned and productionized large language models with RLHF, SFT, and RAG for enterprise clients at Turing—
+          packaged behind MCP-governed endpoints and synthetic partner APIs for safe inference.
+        </p>
+        <div class="project-meta">
+          <article>
+            <p class="tiny-label">Role</p>
+            <p>AI Engineer · Tech Lead</p>
+          </article>
+          <article>
+            <p class="tiny-label">Timeline</p>
+            <p>Jun 2024 – Oct 2025</p>
+          </article>
+          <article>
+            <p class="tiny-label">Stack</p>
+            <p>Python, FastAPI, RLHF, RAG, PostgreSQL, AWS</p>
+          </article>
+          <article>
+            <p class="tiny-label">Impact</p>
+            <p>30% faster data ops · Safe API surface for LLM agents</p>
+          </article>
+        </div>
+        <div class="project-links">
+          <a class="btn btn-primary" href="mailto:sedem.amekpewu.3@gmail.com?subject=Autonomous%20AI%20Delivery%20Platform">
+            Request a walkthrough
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="project-section contain">
+        <h2>Problem</h2>
+        <p>
+          Enterprise customers like Mistral and Apple needed a predictable path from LLM experimentation to compliant,
+          observable production rollouts. Each deployment required domain-specific grounding data, synthetic fixtures that
+          mirrored third-party APIs, and guardrails to keep autonomous agents from overstepping permissions.
+        </p>
+      </section>
+
+      <section class="project-section contain project-grid">
+        <div class="card" data-elevation="1">
+          <h3>Systems approach</h3>
+          <ul>
+            <li>Designed RLHF and SFT loops with human-in-the-loop review and automated drift detection.</li>
+            <li>Built RAG pipelines that layered vector search with policy-aware prompt orchestration.</li>
+            <li>Cloned Slack, Amazon, Jira, and PayPal APIs in FastAPI to stress-test agent reasoning before go-live.</li>
+            <li>Configured MCP servers so AI agents could safely choose the minimal endpoint set per task.</li>
+          </ul>
+        </div>
+        <div class="card" data-elevation="1">
+          <h3>Automation & tooling</h3>
+          <ul>
+            <li>Python + SQL pipelines generated synthetic partner data, boosting data prep throughput by 30%.</li>
+            <li>Observability hooks piped metrics into Grafana to track hallucinations, latency, and cost per token.</li>
+            <li>Code review checklist codified safety tests, enabling a distributed team of five engineers to ship in sync.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="project-section contain">
+        <h2>Results</h2>
+        <div class="project-grid">
+          <article class="stat-card" data-elevation="1">
+            <span class="metric">30%</span>
+            <p class="tiny-label">Faster data engineering cycles</p>
+          </article>
+          <article class="stat-card" data-elevation="1">
+            <span class="metric">5+</span>
+            <p class="tiny-label">Enterprise clients onboarded</p>
+          </article>
+          <article class="stat-card" data-elevation="1">
+            <span class="metric">0</span>
+            <p class="tiny-label">Production regressions over 12 months</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="project-section contain">
+        <h2>What I owned</h2>
+        <div class="project-grid">
+          <div class="card" data-elevation="1">
+            <p class="tiny-label">Architecture</p>
+            <p>
+              Authored the reference architecture for multi-tenant RLHF pipelines, privacy-aware embeddings, and MCP
+              routing. Documented upgrade paths and cost maps for leadership.
+            </p>
+          </div>
+          <div class="card" data-elevation="1">
+            <p class="tiny-label">Team lead</p>
+            <p>
+              Led five engineers, ran design reviews, paired on tricky FastAPI services, and instituted code quality
+              bars that held across time zones.
+            </p>
+          </div>
+          <div class="card" data-elevation="1">
+            <p class="tiny-label">Safety & governance</p>
+            <p>
+              Embedded automated policy checks, audit logging, and data synthetic monitoring so compliance teams could
+              trust each deployment blueprint.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="contain">
+        <p>© <span id="year"></span> Sedem Quame Amekpewu · Autonomous AI Delivery Platform</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

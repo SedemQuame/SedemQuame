@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Eros Android Dating App · Sedem Quame Amekpewu</title>
+    <meta name="description" content="Case study for the Eros Android dating app built by Sedem Quame Amekpewu." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="icon" href="../images/avatar.png" type="image/png" />
+  </head>
+  <body class="project-page">
+    <header class="project-header">
+      <div class="contain">
+        <a class="back-link" href="../index.html">← Back to portfolio</a>
+        <p class="eyebrow">Mobile · 2020</p>
+        <h1>Eros Android Dating App</h1>
+        <p class="lede">
+          Solo-built a privacy-aware dating experience with curated onboarding, match recommendations, and OCR-powered
+          media scanning—published as an open-source reference for friends and the community.
+        </p>
+        <div class="project-meta">
+          <article>
+            <p class="tiny-label">Role</p>
+            <p>Android + Backend Engineer</p>
+          </article>
+          <article>
+            <p class="tiny-label">Timeline</p>
+            <p>Jan 2020 – Dec 2020</p>
+          </article>
+          <article>
+            <p class="tiny-label">Stack</p>
+            <p>Java, Android Studio, Node.js, MongoDB, OCR</p>
+          </article>
+          <article>
+            <p class="tiny-label">Impact</p>
+            <p>Hundreds of beta users · Source reused by other indie devs</p>
+          </article>
+        </div>
+        <div class="project-links">
+          <a class="btn btn-primary" href="https://github.com/SedemQuame/Eros" target="_blank" rel="noopener">View source</a>
+          <a class="btn btn-ghost" href="https://github.com/SedemQuame/Eros_Server_Side" target="_blank" rel="noopener">View API</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="project-section contain">
+        <h2>What needed to exist</h2>
+        <p>
+          Friends wanted a light-weight, invite-only experience focused on safety and context. That meant building
+          onboarding that collected just enough metadata for smart matching, plus tooling to weed out duplicate or
+          malicious profiles without manual moderation.
+        </p>
+      </section>
+
+      <section class="project-section contain project-grid">
+        <div class="card" data-elevation="1">
+          <h3>Android experience</h3>
+          <ul>
+            <li>Crafted onboarding wizard with progressive disclosure and photo verification.</li>
+            <li>Built match feed, in-app chat, and push notifications using Firebase Cloud Messaging.</li>
+            <li>Leveraged Material motion + dark mode support for accessibility.</li>
+          </ul>
+        </div>
+        <div class="card" data-elevation="1">
+          <h3>Backend + AI</h3>
+          <ul>
+            <li>Implemented Node.js + MongoDB APIs for auth, profiles, and recommendations.</li>
+            <li>Used OCR to detect unsafe content and convert images to searchable tags.</li>
+            <li>Automated deployment to Heroku with CI smoke tests.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="project-section contain">
+        <h2>Highlights</h2>
+        <div class="project-grid">
+          <div class="stat-card" data-elevation="1">
+            <span class="metric">95%</span>
+            <p class="tiny-label">Profile verification success rate</p>
+          </div>
+          <div class="stat-card" data-elevation="1">
+            <span class="metric">500+</span>
+            <p class="tiny-label">Beta messages exchanged</p>
+          </div>
+          <div class="stat-card" data-elevation="1">
+            <span class="metric">2 repos</span>
+            <p class="tiny-label">Client + API released publicly</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-section contain">
+        <h2>Responsibilities</h2>
+        <div class="project-grid">
+          <div class="card" data-elevation="1">
+            <p class="tiny-label">Product</p>
+            <p>Shaped the invite flow, safety rules, and community guidelines alongside early adopters.</p>
+          </div>
+          <div class="card" data-elevation="1">
+            <p class="tiny-label">Engineering</p>
+            <p>Owned architecture across mobile and backend, plus infrastructure and monitoring.</p>
+          </div>
+          <div class="card" data-elevation="1">
+            <p class="tiny-label">Open source</p>
+            <p>Documented setup guides so other indie builders can fork and extend the codebase.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="contain">
+        <p>© <span id="year"></span> Sedem Quame Amekpewu · Eros Android Dating App</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
